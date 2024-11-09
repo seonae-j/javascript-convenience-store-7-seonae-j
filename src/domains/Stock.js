@@ -14,12 +14,17 @@ class Stock {
   }
 
   // 사용자가 입력한 상품명과 동일한 상품명을 가진 객체를 가져온다.
-  fineProduct(name) {
-    return this.#product.find((item) => item.name === name);
+  findProduct(name) {
+    const object = this.#product.find((item) => item.name === name);
+    return object;
   }
 
-  getUserProducts() {
-    return this.#product;
+  checkPromotion(obj, name) {
+    if (obj.find((item) => item.promotion !== 'null')) {
+      return obj
+        .filter((item) => item.name === name && item.promotion !== 'null')
+        .map((item) => item.promotion);
+    }
   }
 }
 

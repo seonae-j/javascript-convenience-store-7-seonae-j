@@ -3,7 +3,7 @@ class Products {
     this.name = name;
     this.price = parseInt(price, 10);
     this.stock = parseInt(stock, 10);
-    this.promotion = promotion || null;
+    this.promotion = promotion || 'null';
   }
 }
 
