@@ -9,7 +9,6 @@ const OutputView = {
     MissionUtils.Console.print(
       `안녕하세요. W편의점입니다.\n현재 보유하고 있는 상품입니다.\n\n`
     );
-    MissionUtils.Console.print(`- ${product} ${price}원 ${stock} ${promotion}`);
   },
 
   printOutOfStock() {
