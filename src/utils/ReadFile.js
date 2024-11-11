@@ -1,6 +1,5 @@
 import { MissionUtils } from '@woowacourse/mission-utils';
 import * as fs from 'fs';
-import * as resolve from 'path';
 
 const readFileObject = (filePath) => {
   return new Promise((resolve, reject) => {
